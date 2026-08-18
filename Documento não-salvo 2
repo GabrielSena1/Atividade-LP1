@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+
+int calcularfatorial(int numero) {
+    int fat = 1;
+    for (int i = 1; i <= numero; i++) {
+        fat *= i;
+    }
+    return fat;
+}
+
+int main() {
+    int numero;
+    
+    while (1) {
+        printf("Digite qualquer número inteiro positivo: ");
+        scanf("%d", &numero);
+        
+        if (scanf("%d", &numero) == 1 && numero >= 0 && numero <= 19) {
+            break;
+        } else {
+            printf("Número inválido! Tente novamente.\n");
+        }
+    }
+    
+    int calcularfatorial(int numero);
+    
+    return 0;
+}
+
