@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int c;
+    int contador = 0;
+
+    printf("Digite uma frase: ");
+
+    while ((c = getchar()) != '\n' && c != EOF) {
+        contador++;
+    }
+
+    printf("Total de caracteres: %d\n", contador);
+
+    return 0;
+}
